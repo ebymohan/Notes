@@ -1,0 +1,16 @@
+C:\Users\ebmohan>adb devices
+List of devices attached
+2e6aaf6c        device									//oneplus
+192.168.12.101:5555     device
+
+C:\Users\ebmohan>adb connect 2e6aaf6c				
+missing port in specification: tcp:2e6aaf6c				//how to get port
+														//Disconnected Genymotion
+C:\Users\ebmohan>adb devices
+List of devices attached
+2e6aaf6c        device
+
+
+C:\Users\ebmohan>adb shell
+OnePlus7:/ $ whoami
+shell

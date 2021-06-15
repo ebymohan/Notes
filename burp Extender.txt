@@ -1,0 +1,33 @@
+Template
+
+
+package burp;
+public class BurpExtender implements IBurpExtender
+	{
+		public void registerExtenderCallbacks (IBurpExtenderCallbacks callbacks)
+		{
+			callbacks.setExtensionName ("Your extension name");						//Your extention name
+			IExtensionHelpers helpers = callbacks.getHelpers();						//Gives you access to different functions
+		}
+	}
+	
+	
+	
+	
+
+For the most part, the data you will be inspecting is provided in the form of byte arrays (byte[]). 
+While it is possible to convert from byte to a string,  this process is not entirely trivial and may bloat the memory usage of your extension.
+In some cases this is unavoidable (e.g. you need to execute a regex against a request/response), 
+but on the whole you should try to stick to working with bytes directly.
+	
+	int indexOf (byte[] data, byte[] pattern, boolean caseSensitive, int from, int to);
+	String bytesToString(byte[] data);
+	byte[] stringToBytes(String data);
+	String urlDecode(String data);
+	String urlEncode(String data);
+	byte[] urlDecode(byte[] data);
+	byte[] urlEncode(byte[] data);
+	byte[] base64Decode(String data);
+	byte[] base64Decode(byte[] data);
+	String base64Encode(String data);
+	String base64Encode(byte[] data);

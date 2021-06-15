@@ -1,0 +1,28 @@
+To Install
+
+Burp Suite Free								Done
+Nmap										Done
+Fiddler										Done
+TestSSLServer								Done
+Netbeans J2EE								Done
+Virtual box									Done
+YASCA (SCA)									Done
+VCG (SCA)									
+Python										
+Pycharm								
+Firefox										
+zap (Zed Attack proxy)						
+Android Studio (With ADB and Emulator)	
+
+
+WireShark
+Drozer	
+Putty
+Sqlmap
+MS SQL Server
+
+
+DnSpy
+De4dot
+ILSpy
+ConfuserEX

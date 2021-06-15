@@ -1,0 +1,7 @@
+As of February 2019, latest versions are:
+2.8.11
+2.9.8
+
+To learn more about active development, you may also want to check out issues reported:
+https://github.com/FasterXML/jackson-databind/labels/CVE
+(note: you may want to include closed issues as well as open ones)

@@ -1,0 +1,11 @@
+#Enumerate Ciphers
+nmap -sV --script ssl-enum-ciphers -p 443 <host/ip>
+
+#Test Poodle
+nmap -sV --script ssl-poodle -p 443 <host/ip>
+
+#Test HeartBleed
+nmap --script=ssl-heartbleed <host/ip>
+
+#Test dh Param Strength
+nmap --script ssl-dh-params <target>

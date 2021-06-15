@@ -1,0 +1,7 @@
+​Installation of the following Reverse Engineering tools
+Immunity Debugger - Immunity Debugger is a tool to write analyze malware, and reverse engineer binary files.
+ConfuserEx - ConfuserEx is an free, open-source protector, obfuscator for .NET applications.
+dnSpy - dnSpy is an free, open-source .Net Decompiler
+ILSpy - ILSpy is an free, open-source .Net Decompiler
+Detect it Easy - Detect It Easy, or abbreviated "DIE" is a program for determining types of files by examining file headers.
+idapro

@@ -1,0 +1,116 @@
+Production
+
+appsecdiv/appsecdiv@gmail.com/AppSecDivision Admin Group/
+//Project1 Admin Group
+
+
+CHECKMARX
+http://10.1.133.32/CxWebClient/Login.aspx			
+cxuser	Cxuser-01
+ebymohan	00@Asdfgh
+
+
+
+
+
+sandbox.oneclear.com
+eby.mohan@primefocus.com
+00@Asdfgh
+
+
+
+e3458218@nwytg.net/divisionadmin/
+leyesa@xgmailoo.com/divisionproject1admin
+
+
+Production
+dax.clearhub.tv
+
+
+
+QA Testing Environments-
+Tenent - AzureDemo(5028)
+	   - PFTPH(4002)
+https://pftph2.clearhub.tv/BC/PRODUCT/Modules/Home/Home.aspx
+For Admin user:		phuser / Nimda@12345			7008 - UserID
+					azuredemo/Happy@2018@			88219 - UserID
+For ordinary user:	ebymohan/00@Asdfgh
+					00pftph/
+					00daxstudio/
+					000test/0000@Test
+For ordinary user:	appsec02
+For Okta Login: 	Normaluser.okta@yahoo.com/Cloud#4321
+					sharmila@gmail.com/Refer@123
+For ordinary user:	appsec01/00@Asdfgh		pftph2.clearhub.tv
+					sectest/00@Sectest		qa.clearhub.tv
+					testsec1/00@Asdfgh		qa.clearhub.tv
+					assectest/00@Asdfgh		qa.clearhub.tv
+					
+For Calender Checking
+					azuredemocal/00@Asdfgh
+					pftphcal/00@Asdfgh
+
+https://demonab.clearhub.tv/BC/Product/Modules/SignIn.aspx
+Swetha.uc/Magic@4321
+Nagesh_Screeners1/Demonab@321 (LADC)
+deepa_demonab/Unified#4321
+
+
+https://daxstudio2.clearhub.tv/BC/Product/Modules/SignIn.aspx
+daxstudio/Studio@112
+000dax/000@Dax
+
+URL : dev-578918.oktapreview.com 
+Username : swethac21@gmail.com
+Password : Pass#4321
+
+Azuredemo
+00Azure_eby/00@Asdfgh
+azuredemo/Happy@2017
+
+
+
+staging.oneclear.com
+azureuser/R1tt1ck@6 - AZURE PREPROD ADMIN
+lax_ahmed / Relook@8888
+
+shruthid/Relook@888
+00aestudios/00@Aestudios
+00qastudio/00@Qastudio
+01qastudio/01@Qastudio
+eby_normal1/00@Asdfgh
+eby_assetshare1/00@Asdfgh
+
+
+
+root@10.1.172.105 Pass@123
+
+
+SQL @ 192.168.150.163 clear @ clear
+select * from clear.users where login_id='ebymohan'
+
+select * from clear.EMAIL_QUEUE
+select * from clear.EMAIL_QUEUE where recipient='eby.mohan@primefocus.com' order by id desc
+
+
+
+select * from clear.UserTenantCollaborationMapping
+
+select * from UNIFIEDBC.mediaarchive.Pools
+
+select * from UNIFIED.mediaarchive.Dam_ContentTypeMasters order by 1 desc
+
+
+Logs for services can be found here
+\\10.1.172.107\BC_Clear\WEBSERVICES
+
+
+10.1.172.107\qaupload.clearhub.tv
+
+
+
+192.168.150.230		Media Center IP Address for pftph
+Drop Box Location	PFTPH
+
+
+10.200.5.4	Media Center IP Address for staging

